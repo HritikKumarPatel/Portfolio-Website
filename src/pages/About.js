@@ -1,24 +1,13 @@
 import React from "react";
 import { IdentificationIcon } from "@heroicons/react/solid";
 
-const PythonLogo = require("../assets/logos/PythonLogo.png");
-const ReactLogo = require("../assets/logos/ReactLogo.png");
-const TypescriptLogo = require("../assets/logos/TypescriptLogo.png");
-const JsLogo = require("../assets/logos/JsLogo.png");
-const NextLogo = require("../assets/logos/NextLogo.png");
-const TailwindLogo = require("../assets/logos/TailwindLogo.png");
-const SqlLogo = require("../assets/logos/SqlLogo.png");
-const ReduxLogo = require("../assets/logos/ReduxLogo.png");
-const FirebaseLogo = require("../assets/logos/FirebaseLogo.png");
-const MongoDBLogo = require("../assets/logos/MongoDBLogo.png");
-const NodeJSLogo = require("../assets/logos/NodeJSLogo.png");
-const DockerLogo = require("../assets/logos/DockerLogo.png");
+
 
 const About = () => {
   return (
     <div
       id="About"
-      className="mx-12 mt-60 lg:mx-60 items-center justify-center lg:w-1/2 text-justify"
+      className="mx-12 pb-10 mt-60 lg:mx-60 items-center justify-center lg:w-1/2 text-justify"
     >
       <div>
         <div className="table">
@@ -28,118 +17,94 @@ const About = () => {
           </code>
           <div className="table-cell border-b border-b-[#e6f1ff] border-opacity-25 w-full"></div>
         </div>
-        <div className="text-[#a2aabc] text-lg mt-5">
-          <code>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros
-            non nisi vulputate eleifend. Vestibulum erat ipsum, lacinia ut nibh
-            ut, pulvinar interdum lorem. Aliquam et nisi eu risus ultrices
-            suscipit nec nec quam. Suspendisse pretium fermentum luctus.
-            Maecenas vitae vestibulum ipsum, ut varius diam. Phasellus mattis
-            nunc vel purus maximus, sit amet congue ligula tincidunt. Nulla
-            tristique luctus lacinia. Nullam ut tortor arcu.
-          </code>
-          <br />
-          <br />
-          <code>Aenean in mi non leo placerat suscipit a eget odio:</code>
-          <div className="grid grid-cols-3 gap-2 text-sm mt-5 text-brown_vs">
-            <div className="flex flex-row  mb-3">
-              <img
-                src={JsLogo}
-                alt="Js Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>JavaScript (ES6+)</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={NextLogo}
-                alt="Next Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Next.js</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={ReactLogo}
-                alt="React Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>React</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={TypescriptLogo}
-                alt="Typescript Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>TypeScript</code>
-            </div>
-            <div className="flex flex-row  mb-3">
-              <img
-                src={TailwindLogo}
-                alt="Tailwind Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Tailwind CSS</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={ReduxLogo}
-                alt="Redux Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Redux</code>
-            </div>
-            <div className="flex flex-row  mb-3">
-              <img
-                src={PythonLogo}
-                alt="Python Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Python</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={FirebaseLogo}
-                alt="Firebase Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Firebase</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={NodeJSLogo}
-                alt="NodeJS Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Nodejs</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={SqlLogo}
-                alt="SQL Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>SQL</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={MongoDBLogo}
-                alt="MongoDB Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>MongoDB</code>
-            </div>
-            <div className="flex flex-row mb-3">
-              <img
-                src={DockerLogo}
-                alt="MongoDB Logo"
-                className="h-5 w-5 ml-3 mr-4 text-yellow_vs"
-              />
-              <code>Docker</code>
-            </div>
+
+        
+
+
+
+
+      <div className="pt-7 text-[#a2aabc] text-lg mt-5">
+        <div className="flex flex-col">
+          <div className="pb-3 w-1/4">
+            <code className="text-yellow_vs">Education</code>
+          </div>
+          <div className="pb-3 w-3/4">
+            <code className="text-blue_vs">B.Tech in Electrical Engineering</code>
+            <br />
+            <code className="italic text-sm text-lightblue_vs">
+              Indian Institute of Technology, Hyderabad
+            </code>
+            <br />
+            <code className="text-xs text-brown_vs">
+              • 2019 - Present, 7.74 cgpa
+            </code>
           </div>
         </div>
+        <div className="flex flex-row">
+          
+          <div className="pb-3 w-3/4">
+            <code className="text-blue_vs">Intermediate</code>
+            <br />
+            <code className="italic text-sm text-lightblue_vs">
+              Delhi Public School, Varanasi (C.B.S.E)
+            </code>
+            <br />
+            <code className="text-xs text-brown_vs">
+              • 2018 - 2019, 95.2%
+            </code>
+          </div>
+        </div>
+        <div className="flex flex-row">
+          
+          <div className="w-3/4">
+            <code className="text-blue_vs">High School</code>
+            <br />
+            <code className="italic text-sm text-lightblue_vs">
+              Delhi Public School, Varanasi (C.B.S.E)
+            </code>
+            <br />
+            <code className="text-xs text-brown_vs">
+              • 2016 - 2017, 10 cgpa
+            </code>
+          </div>
+        </div>
+
+        
+        
+
+
+       
+
+
+
+
+        <div className="flex flex-col pt-10 flex-wrap">
+          <div className="w-1/4">
+            <code className="text-yellow_vs">Achievements</code>
+          </div>
+          <div className="w-3/4">
+            <code className="text-sm">
+              <br />• <b className="text-blue_vs">Jee Mains</b> <b className="text-lightblue_vs">Rank</b> - <b className="text-brown_vs">2322</b>, <b className="text-blue_vs">Jee Advanced</b> <b className="text-lightblue_vs">Rank</b> - <b className="text-brown_vs">4775</b>. 
+              <br />• Secured rank of <b className="text-brown_vs">114</b> out of <b className="text-brown_vs">89k+</b> participants in Round 1 of <b className="text-lightblue_vs">IICC - Innovate India Coding Championship</b> organized by <b className="text-blue_vs">Coding Ninjas</b>.
+              <br />• Solved <b className="text-brown_vs">200+</b> <b className="text-lightblue_vs">DSA questions</b> on <b className="text-blue_vs"><a target="_blank" href="https://leetcode.com/hri_pra/">LeetCode</a></b> and <b className="text-brown_vs">250+</b> <b className="text-lightblue_vs">DSA questions</b> on <b className="text-blue_vs">InterviewBit</b>.
+            </code>
+          </div>
+        </div>
+
+        <div className="flex flex-col pt-10 flex-wrap">
+          <div className="w-1.5/4">
+            <code className="text-yellow_vs">Hobbies and Extracurricular Activities</code>
+          </div>
+          <div className="w-3/4">
+            <code className="text-sm">
+              <br />• Participated in different drives like <b className="text-blue_vs">Plantation Drives</b> and <b className="text-blue_vs">Clean India Drives</b> organized by NSS in our college.
+              <br />•  I love to play <b className="text-blue_vs">guitar</b> in my leisure time. <b className="text-blue_vs"></b>Swimming is my favorite sport, followed by <b className="text-blue_vs">cricket</b> and <b className="text-blue_vs">basketball</b>.
+            </code>
+          </div>
+        </div>
+
+
+      </div>
       </div>
     </div>
   );

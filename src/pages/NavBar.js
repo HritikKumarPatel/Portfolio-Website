@@ -109,87 +109,242 @@ const NavBar = ({ showPage, setShowPage }) => {
           />
         </Container>
       )}
-      {hidePage.includes("resume") ? null : showPage === "resume" ? (
-        <ActiveContainer
-          onClick={() => {
-            setShowPage("resume");
-          }}
-        >
-          <img
-            src={JSIcon}
-            alt="JS Icon"
-            className="w-7 mr-1  text-yellow_vs"
-          />
-          Resume.js
-          <XIcon
-            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
-            onClick={(e) => {
-              e.stopPropagation();
-              setShowPage("home");
-              setHidePage(prevState=>[...prevState, "resume"]);
-            }}
-          />
-        </ActiveContainer>
-      ) : (
-        <Container
-          onClick={() => {
-            setShowPage("resume");
-          }}
-        >
-          <img
-            src={JSIcon}
-            alt="JS Icon"
-            className="w-7 mr-1  text-yellow_vs"
-          />
-          Resume.js
-          <XIcon
-            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
-            onClick={(e) => {
-              e.stopPropagation();
-              setShowPage("home");
-              setHidePage(prevState=>[...prevState, "resume"]);
-              console.log(hidePage);
-            }}
-          />
-        </Container>
-      )}
-      {hidePage.includes("contact") ? null : showPage === "contact" ? (
-        <ActiveContainer
-          onClick={() => {
-            setShowPage("contact");
-          }}
-        >
-          <img src={JSIcon} alt="JS Icon" className="w-7 mr-1 text-yellow_vs" />
-          Contact.js
-          <XIcon
-            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
-            onClick={(e) => {
-              e.stopPropagation();
-              setShowPage("home");
-              setHidePage(prevState=>[...prevState, "contact"]);
-            }}
-          />
-        </ActiveContainer>
-      ) : (
-        <Container
-          onClick={() => {
-            setShowPage("contact");
-          }}
-        >
-          <img src={JSIcon} alt="JS Icon" className="w-7 mr-1 text-yellow_vs" />
-          Contact.js
-          <XIcon
-            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
-            onClick={(e) => {
-              e.stopPropagation();
-              setShowPage("home");
-              setHidePage(prevState=>[...prevState, "contact"]);
-              console.log(hidePage);
 
+
+    {hidePage.includes("work") ? null : showPage === "work" ? (
+        <ActiveContainer
+          onClick={() => {
+            setShowPage("work");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          Work_Experience.js
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "about"]);
+            }}
+          />
+        </ActiveContainer>
+      ) : (
+        <Container
+          onClick={() => {
+            setShowPage("work");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          Work_Experience.js
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "work"]);
             }}
           />
         </Container>
       )}
+
+
+
+{hidePage.includes("projects") ? null : showPage === "projects" ? (
+        <ActiveContainer
+          onClick={() => {
+            setShowPage("projects");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          Projects.js
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "about"]);
+            }}
+          />
+        </ActiveContainer>
+      ) : (
+        <Container
+          onClick={() => {
+            setShowPage("projects");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          Projects.js
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "projects"]);
+            }}
+          />
+        </Container>
+      )}
+
+
+
+
+   
+
+      {hidePage.includes("skills") ? null : showPage === "skills" ? (
+        <ActiveContainer
+          onClick={() => {
+            setShowPage("skills");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          Skills.js
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "skills"]);
+            }}
+          />
+        </ActiveContainer>
+      ) : (
+        <Container
+          onClick={() => {
+            setShowPage("skills");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          Skills.js
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "skills"]);
+            }}
+          />
+        </Container>
+      )}
+
+
+      
+      {hidePage.includes("courses") ? null : showPage === "courses" ? (
+        <ActiveContainer
+          onClick={() => {
+            setShowPage("courses");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          Courses.js
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "courses"]);
+            }}
+          />
+        </ActiveContainer>
+      ) : (
+        <Container
+          onClick={() => {
+            setShowPage("courses");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          Courses.js
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "courses"]);
+              console.log(hidePage);
+            }}
+          />
+        </Container>
+      )}
+
+
+
+{hidePage.includes("pors") ? null : showPage === "pors" ? (
+        <ActiveContainer
+          onClick={() => {
+            setShowPage("pors");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          PORs.js
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "pors"]);
+            }}
+          />
+        </ActiveContainer>
+      ) : (
+        <Container
+          onClick={() => {
+            setShowPage("pors");
+          }}
+        >
+          <img
+            src={JSIcon}
+            alt="JS Icon"
+            className="w-7 mr-1  text-yellow_vs"
+          />
+          PORs.js
+          <XIcon
+            className="w-6 ml-4 hover:bg-gray-600 hover:rounded"
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowPage("home");
+              setHidePage(prevState=>[...prevState, "pors"]);
+            }}
+          />
+        </Container>
+      )}
+
+
+      
     </div>
   );
 };

@@ -6,6 +6,11 @@ import Resume from "./Resume";
 import MobileMenu from "./MobileMenu";
 import Header from "./Header";
 import NavBar from "./NavBar";
+import Projects from "./Projects";
+import Work from "./Work Experience";
+import Courses from "./Courses";
+import Skills from "./Skills";
+import PORs from "./PORs and Extracurricular";
 
 const Home = () => {
   const [showPage, setShowPage] = useState("home");
@@ -29,16 +34,36 @@ const Home = () => {
           <>
             <Header id="Header" />
             <About id="About" />
-            <Resume id="Resume" />
-            <Contact id="Contact" />{" "}
+            <Work id="work" />
+            <Projects id="projects" />
+            <Skills id = "skills" />
+            <Courses id="courses"/>
+            <PORs id="pors" />
+            {" "}
           </>
         ) : showPage==="about" ? (
           <About id="About" />
-        ) : showPage==="resume" ? (
-          <Resume id="Resume" />
-        ) : showPage==="contact" ? (
-          <Contact id="Contact" />
-        ) : null}
+          
+        )
+        : showPage==="pors" ? (
+          <PORs id="pors" />
+          
+        )
+        : showPage==="work" ? (
+          <Work id="work" />
+          
+        )
+        : showPage==="courses" ? (
+          <Courses id="courses" />
+          
+        )
+        : showPage==="skills" ? (
+          <Skills id="skills" />
+          
+        )
+        : showPage==="projects" ? (
+            <Projects id="Projects" />
+        )  : null}
       </div>
     </div>
   );
